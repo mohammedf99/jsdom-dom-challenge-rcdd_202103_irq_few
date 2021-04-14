@@ -40,12 +40,6 @@ pause.addEventListener('click', function(){
   
 });
 
-  if(pause.innerText === 'resume'){
-    pause.addEventListener('click', function(){
-      // window.setInterval(cInterval);
-      alert('hey')
-    });
-  }
 
 form.addEventListener('submit', function(e){
   
