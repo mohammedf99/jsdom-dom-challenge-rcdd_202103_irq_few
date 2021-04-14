@@ -15,7 +15,6 @@ form.addEventListener('submit', function(e){
   li.innerText = commentInput.value;
   ul.append(li);
   commentDiv.append(ul);
-  commentInput.innerHTML = '';
 });
 
 let count = 0;
