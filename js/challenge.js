@@ -2,17 +2,17 @@ const counter = document.querySelector('#counter');
 const minus = document.querySelector('#minus');
 const plus = document.querySelector('#plus');
 const pause = document.querySelector('#pause');
-const commentInput = document.querySelector('#comment-input');
+;
 const form = document.querySelector('#comment-form');
 const commentDiv = document.querySelector('.comments');
 const heart = document.querySelector('#heart');
 
 form.addEventListener('submit', function(e){
-  
+  const commentInput = document.querySelector('#comment-input').value
   e.preventDefault();
   let ul = document.createElement('ul');
   let li = document.createElement('li');
-  let textLi = document.createTextNode(commentInput.value).value;
+  let textLi = document.createTextNode(commentInput);
   li.innerText = textLi;
   ul.append(li);
   commentDiv.append(ul);
