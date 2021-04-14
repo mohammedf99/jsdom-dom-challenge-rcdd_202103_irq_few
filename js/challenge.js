@@ -7,6 +7,15 @@ const form = document.querySelector('#comment-form');
 const commentDiv = document.querySelector('.comments');
 const heart = document.querySelector('#heart');
 
+form.addEventListener('submit', function(e){
+  
+  e.preventDefault();
+  let ul = document.createElement('ul');
+  let li = document.createElement('li');
+  let textLi = document.createTextNode(commentInput.value);
+  
+});
+
 let count = 0;
 
 let cInterval = window.setInterval(function(){
@@ -27,14 +36,6 @@ minus.addEventListener('click', function(){
   
 });
 
-form.addEventListener('submit', function(e){
-  
-  e.preventDefault();
-  let ul = document.createElement('ul');
-  let li = document.createElement('li');
-  let textLi = document.createTextNode(commentInput.value);
-  
-});
 
 pause.addEventListener('click', function(){
   window.clearInterval(cInterval);
