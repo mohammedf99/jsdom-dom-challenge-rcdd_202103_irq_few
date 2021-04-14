@@ -18,11 +18,11 @@ form.addEventListener('submit', function(e){
 
 let count = 0;
 
-// let cInterval = window.setInterval(function(){
+let cInterval = window.setInterval(function(){
   
-//     counter.innerText = ++count;
+    counter.innerText = ++count;
   
-// }, 1000);
+}, 1000);
 
 plus.addEventListener('click', function(){
 
