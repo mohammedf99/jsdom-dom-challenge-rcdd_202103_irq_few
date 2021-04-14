@@ -35,8 +35,14 @@ pause.addEventListener('click', function(){
   submit.disabled = true;
   heart.disabled = true;
   
-  // pause.innerText = 'resume';
-  const resume = pause.innerText;
+  pause.innerText = 'resume';
+  
+  if(pause.innerText === 'resume'){
+    pause.addEventListener('click', function(){
+      window.setInterval(cInterval);
+    });
+  }
+  
 });
 
 form.addEventListener('submit', function(e){
