@@ -8,11 +8,11 @@ const commentDiv = document.querySelector('.comments');
 const heart = document.querySelector('#heart');
 
 form.addEventListener('submit', function(e){
-  const commentInput = document.querySelector('#comment-input').value
+  const commentInput = document.querySelector('#comment-input');
   e.preventDefault();
   let ul = document.createElement('ul');
   let li = document.createElement('li');
-  li.innerText = commentInput;
+  li.innerText = commentInput.value;
   ul.append(li);
   commentDiv.append(ul);
   commentInput.innerText = '';
