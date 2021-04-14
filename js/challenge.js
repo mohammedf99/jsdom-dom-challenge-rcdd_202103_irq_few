@@ -27,6 +27,14 @@ minus.addEventListener('click', function(){
   
 });
 
+form.addEventListener('submit', function(e){
+  
+  e.preventDefault();
+  let ul = document.createElement('ul');
+  let li = document.createElement('li');
+  let textLi = document.createTextNode(commentInput.value);
+  
+});
 
 pause.addEventListener('click', function(){
   window.clearInterval(cInterval);
@@ -36,16 +44,5 @@ pause.addEventListener('click', function(){
   heart.disabled = true;
   
   pause.innerHTML = 'resume';
-  
-  
-});
-
-
-form.addEventListener('submit', function(e){
-  
-  e.preventDefault();
-  let ul = document.createElement('ul');
-  let li = document.createElement('li');
-  let textLi = document.createTextNode(commentInput.value);
   
 });
