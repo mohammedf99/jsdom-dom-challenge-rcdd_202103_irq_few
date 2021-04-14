@@ -12,11 +12,10 @@ form.addEventListener('submit', function(e){
   e.preventDefault();
   let ul = document.createElement('ul');
   let li = document.createElement('li');
-  // let textLi = document.createTextNode(commentInput);
   li.innerText = commentInput;
   ul.append(li);
   commentDiv.append(ul);
-  
+  commentInput.value = '';
 });
 
 let count = 0;
