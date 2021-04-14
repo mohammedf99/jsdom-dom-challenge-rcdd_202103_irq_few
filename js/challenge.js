@@ -35,7 +35,8 @@ pause.addEventListener('click', function(){
   submit.disabled = true;
   heart.disabled = true;
   
-  pause.innerText = 'resume';
+  // pause.innerText = 'resume';
+  const resume = pause.innerText;
 });
 
 form.addEventListener('submit', function(e){
