@@ -2,7 +2,7 @@ const counter = document.querySelector('#counter');
 const minus = document.querySelector('#minus');
 const plus = document.querySelector('#plus');
 const pause = document.querySelector('#pause');
-;
+
 const form = document.querySelector('#comment-form');
 const commentDiv = document.querySelector('.comments');
 const heart = document.querySelector('#heart');
