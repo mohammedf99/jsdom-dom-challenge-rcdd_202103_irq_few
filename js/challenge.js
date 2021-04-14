@@ -37,7 +37,7 @@ pause.addEventListener('click', function(){
   
   pause.innerText = 'resume';
   
-  if(pause.innerText === 'resume'){
+  if(pause.innerText.value === 'resume'){
     pause.addEventListener('click', function(){
       window.setInterval(cInterval);
     });
