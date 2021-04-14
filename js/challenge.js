@@ -40,6 +40,7 @@ pause.addEventListener('click', function(){
   if(pause.innerText.value === 'resume'){
     pause.addEventListener('click', function(){
       // window.setInterval(cInterval);
+      alert('hey');
     });
   }
   
