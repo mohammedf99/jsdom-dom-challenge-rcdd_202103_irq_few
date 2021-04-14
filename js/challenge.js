@@ -13,6 +13,9 @@ form.addEventListener('submit', function(e){
   let ul = document.createElement('ul');
   let li = document.createElement('li');
   let textLi = document.createTextNode(commentInput.value);
+  li.appned(textLi);
+  ul.append(li);
+  commentDiv.append(ul);
   
 });
 
