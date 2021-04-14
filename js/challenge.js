@@ -13,7 +13,7 @@ form.addEventListener('submit', function(e){
   let ul = document.createElement('ul');
   let li = document.createElement('li');
   let textLi = document.createTextNode(commentInput);
-  li.innerText = textLi;
+  li.innerText = textLi.value;
   ul.append(li);
   commentDiv.append(ul);
   
